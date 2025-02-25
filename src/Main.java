@@ -4,14 +4,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
 
-        System.out.print("Digite a sua idade:");
-        int idade = leitor.nextInt();
+        System.out.print("Digite um numero inteiro:");
+        int n1 = leitor.nextInt();
 
-        if (idade >= 18) {
-            System.out.printf("já pode ser preso, cidadão. Você possui %d anos!%n", idade);
-        } else {
-            int diferenca = (18 - idade);
-            System.out.printf("Faltam %d anos para você poder ser preso.", idade);
+        System.out.print("Digite outro numero inteiro:");
+        int n2 = leitor.nextInt();
+        int soma = n1+n2;
+
+        if(soma > 10){
+            System.out.println(soma+" foi a soma dos números e foi maior que 10" );
         }
     }
 }
