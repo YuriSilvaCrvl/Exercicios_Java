@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //VERIFICAR SE A PALAVRA TEM MAIS DE 5 LETRAS OU NÃO.
+        //Verificar se o número está entre 5 e 20.
         Scanner leitor = new Scanner(System.in);
 
         System.out.print("Digite algo:");
-        String a = leitor.nextLine();
+        int a = leitor.nextInt();
 
-        if(a.length() >=5){
-            System.out.println("A palavra "+a+" contém "+a.length()+ " letras");
+        if(a >= 5 && a <=20){
+            System.out.println("O número "+a+" se encaixa nas especificações de estar entre 5 e 20.");
         }else{
-            System.out.println("A palavra "+a+" possui menos de 5 letras.");
+            System.out.println(a+"  <-- este número não está entre 5 e 20.");
         }
     }
 }
