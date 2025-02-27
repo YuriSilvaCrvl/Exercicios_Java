@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //VERIFICAÇÃO DE NÚMERO ÍMPAR.
+        //VERIFICAR SE A PALAVRA TEM MAIS DE 5 LETRAS OU NÃO.
         Scanner leitor = new Scanner(System.in);
 
-        System.out.print("Digite um numero inteiro:");
-        int n1 = leitor.nextInt();
+        System.out.print("Digite algo:");
+        String a = leitor.nextLine();
 
-        if (n1 %2 != 0){
-            System.out.println(n1);
+        if(a.length() >=5){
+            System.out.println("A palavra "+a+" contém "+a.length()+ " letras");
         }else{
-            System.out.println("o número "+n1+" não é ímpar.");
+            System.out.println("A palavra "+a+" possui menos de 5 letras.");
         }
     }
 }
